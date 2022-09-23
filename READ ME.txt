@@ -1,0 +1,11 @@
+Trabajo final desarrollado por Juan Gracia. Blog.
+
+Blog social simil de red social. 
+Use todo lo aprendido en el curso.
+Incorpora imagenes.
+Tiene estilos.
+Testeado.
+Tiene video con las funcionalidades.
+
+superuser: admin
+password: 12345678
