@@ -82,12 +82,14 @@ def profile(request, pk):
     user_profile = Profile.objects.get(user=user_object)
     user_posts = Post.objects.filter(user=pk)
     user_post_length = len(user_posts)
+    user_profile_length = len(user_profile)
 
     context = {
         'user_object': user_object,
         'user_profile': user_profile,
         'user_posts': user_posts,
         'user_post_length': user_post_length,
+        'user_profile_length': user_profile_length,
     }
     return render(request, 'profile.html', context)
 
