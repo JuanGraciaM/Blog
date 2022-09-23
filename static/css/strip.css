@@ -34,11 +34,11 @@
  * we're not expecting that browser to have a mobile sized screen anyway
  */
 @media all and (max-width: 414px) and (orientation: portrait),
-       all and (max-width: 736px) and (max-height: 414px) {
+        all and (max-width: 736px) and (max-height: 414px) {
   .strp-window.strp-horizontal { min-width: 100%; }
 }
 @media all and (max-height: 414px) and (orientation: landscape),
-       all and (max-height: 736px) and (max-width: 414px){
+        all and (max-height: 736px) and (max-width: 414px){
   .strp-window.strp-vertical { min-height: 100%; }
 }
 
@@ -120,9 +120,9 @@
 }
 
 /* youtube & vimeo use overlap:false, this adds padding
-   to make sure buttons don't overlap the content.
+    to make sure buttons don't overlap the content.
    navbutton = 72 = 54 + (2 * 9 margin)
-   closebutton = 48
+    closebutton = 48
 */
 .strp-no-overlap .strp-container { padding: 48px 72px; }
 .strp-no-overlap.strp-no-sides .strp-container { padding: 48px 0; }
@@ -370,7 +370,7 @@
 
 /* Reduce < > button size on narrow screens (iPhone 6 and smaller) */
 @media all and (max-width: 375px) and (orientation: portrait),
-       all and (max-height: 375px) and (max-width: 667px) {
+        all and (max-height: 375px) and (max-width: 667px) {
   .strp-window-skin-strip .strp-nav {
     width: 48px;
     height: 60px;
@@ -392,8 +392,8 @@
   .strp-window-skin-strip.strp-no-svg .strp-nav-hover.strp-nav-next .strp-nav-button-icon { background-image: url('strip-skins/strip/next-small.png'); }
 
   /* also reduce padding
-     navbutton = 58 = 48 + (2 * 5 margin)
-     closebutton = 48
+      navbutton = 58 = 48 + (2 * 5 margin)
+      closebutton = 48
    */
   .strp-no-overlap .strp-container { padding: 48px 58px; }
   .strp-no-overlap.strp-no-sides .strp-container { padding: 48px 0; }
@@ -406,7 +406,7 @@
 .strp-window-skin-strip .strp-close .strp-close-icon { background-image: url('strip-skins/strip/close.svg'); opacity: .8; }
 .strp-window-skin-strip .strp-close:hover .strp-close-icon { opacity: 1; }
 /* iOS 8.4.1 bug: when opacity changes it'll require 2 taps
-   force a single opacity to fix this
+    force a single opacity to fix this
 */
 .strp-window-skin-strip.strp-mobile-touch .strp-close .strp-close-icon,
 .strp-window-skin-strip.strp-mobile-touch .strp-close:hover .strp-close-icon { opacity: 1; }
